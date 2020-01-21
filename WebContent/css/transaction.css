@@ -1,0 +1,68 @@
+
+
+.navbar
+{
+	z-index: 999;
+}
+
+.side-navbar
+{
+	z-index: 999;
+}
+
+
+.page-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 300px;
+	width: 480px;
+	height: 60px;
+	text-align: center;
+	background: #fff;
+	display: block;
+	border-bottom: 2px solid #363636;
+}
+
+.img-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 280px;
+	height: 280px;
+	padding: 30px;
+	
+}
+.img-info img
+{
+	width: 240px;
+	height: 240px;
+}
+.info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+}
+
+.info h3
+{
+	color: #363636;
+}
+
+.success
+{
+	color: #4ce67f;
+}
+
+.fail
+{
+	color: #f5425d;
+}
+
+.cancel
+{
+	color: #4aaeff;
+}

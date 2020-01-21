@@ -1,0 +1,183 @@
+
+
+.navbar
+{
+	z-index: 999;
+}
+
+.side-navbar
+{
+	z-index: 999;
+}
+
+
+.page-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 300px;
+	width: 480px;
+	height: 60px;
+	text-align: center;
+	background: #fff;
+	display: block;
+	border-bottom: 2px solid #363636;
+}
+
+
+.info-holder
+{
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 480px;
+	height: auto;
+	margin: 0px auto;
+	color:#363636;
+	display: block;
+	justify-content: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #363636;
+}
+
+.title
+{
+	padding-top: 20px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+.image-holder
+{
+	left: 0;
+	right: 0px;
+	width: 240px;
+	height: auto;
+	margin: 0px auto;
+}
+
+.image-holder img
+{
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+.basic-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+.basic-info-table
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 420px;
+	font-size: 14px;
+	background: #f7f7f7;
+	border: 2px solid #363636;
+	border-collapse: collapse;
+}
+
+.purchase-info-table
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;	
+}
+
+.basic-info-table tr th,td
+{
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+.purchase-info
+{
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 480px;
+	height: auto;
+	margin: 0px auto;
+	margin-top: 10px;
+	background: #f7f7f7;
+	color:#363636;
+	z-index: 990;
+	display: block;
+	justify-content: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #363636;
+	padding-bottom: 20px;
+}
+
+
+.purchase-info table tr th
+{
+	font-size: 14px;
+	text-align: center;
+}
+
+.purchase-info table tr td
+{
+	font-size: 12px;
+	text-align: center;
+}
+
+caption 
+{
+	font-size: 18px;
+}
+
+.delivered-order
+{
+	margin-top: 30px;
+}
+
+
+@media (min-width: 1000px) {
+	.page-info
+	{
+		width: 50%;
+	}
+	
+	.info-holder
+	{
+		width: 50%;
+	}
+	
+	.image-holder img
+	{
+		width: 320px;
+		height: 320px;
+	}
+	
+	.basic-info-table
+	{
+		width: 90%;
+	}
+	
+	.purchase-info
+	{
+		width: 50%;
+	}
+	
+	.purchase-info-table
+	{
+		width: 90%;
+		left: 0;
+		right: 0;
+		margin: 0px auto;
+		border: 2px solid #363636;
+	}
+	
+}

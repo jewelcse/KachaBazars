@@ -1,0 +1,51 @@
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	
+
+}
+
+
+body
+{
+	background: #dae3dc;
+	background-size: cover;
+	background-position: center;
+}
+	
+
+.field-wrapper
+{
+	width: 400px;
+	position: absolute;
+	
+}
+
+
+.field-wrapper .input-box
+{
+	width: 90%;
+	overflow: hidden;
+	border-bottom: 2px #3333;
+	height: 90%;
+}
+
+.input-box input
+{
+	background: none;
+	outline: none;
+	border: none;
+}
+
+
+
+table tr td
+{
+	border-bottom: 2px black;
+}

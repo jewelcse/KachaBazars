@@ -1,0 +1,58 @@
+
+.side-navbar
+{
+	display: none;
+}
+
+@media (min-width: 1000px)
+{
+	.side-navbar
+	{
+		top: 0;
+		width: 240px;
+		height: 70%;
+		margin-top: 300px;
+		box-shadow: 3px 1px 3px #4444;
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		z-index: 999;
+		display: block;
+	}
+
+
+	.menu-1
+	{
+		padding-top: 25px;
+	}
+
+	.menu-1 .menu-name-title
+	{
+		padding: 7px 00px 00px 5px;
+	}
+
+	.menu-1 ul li
+	{
+		margin-top: 10px;
+		list-style: none;
+		text-align: center;
+	}
+	
+	.menu-1 ul li a
+	{
+		width: 300px;
+		height: 40px;
+		color: #1d1d1d;
+		font-size: 20px; 
+		text-decoration: none;
+	}
+
+	.menu-1 ul li a:hover
+	{
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+		border-bottom: 2px solid #363636;
+		border-radius: 2px;
+		padding-top: 4px; 
+	}
+}

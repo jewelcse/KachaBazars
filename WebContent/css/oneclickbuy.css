@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.page-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 300px;
+	width: 480px;
+	height: 60px;
+	text-align: center;
+	background: #fff;
+	display: block;
+	border-bottom: 2px solid #363636;
+}
+
+
+.detail-container
+{
+	padding-bottom: 20px;
+}
+
+.current-info
+{
+	border:2px solid #363636;
+}
+
+
+.new
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 20px;
+	width: 480px;
+}
+
+
+.personal-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	padding-bottom: 20px;
+}
+
+
+.product-details
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.product-image img
+{
+	width: 320px;
+}
+
+.product-info
+{
+	width: 480px;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 20px;
+	border: 2px solid #363636;
+}
+
+.product-table
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 90%;
+}
+
+.button
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+}
+
+.input-field
+{
+	margin-top: 20px;
+	border: none;
+	width: 80%;
+	height: 30px;
+	border-bottom: 1px solid #363636;
+	font-size: 16px;
+	background: transparent;
+}
+
+.input-field:hover
+{
+	border: none;
+	border-bottom: 1px solid #f5425d;
+}
+
+
+.customer-image img
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+}
+
+.new-info
+{
+	border-top: 2px solid #363636;
+}
+
+
+.medium
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 160px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.red
+{
+	background: #f5425d;
+	border: 2px solid #f5425d;
+}
+
+.red:hover
+{
+	transition: .3s all;
+	background: #4ce67f;
+	border: 2px solid #4ce67f;
+}
+
+.blue
+{
+	background: #4aaeff;
+	border: 2px solid #4aaeff;
+}
+
+.blue:hover
+{
+	transition: .3s all;
+	background: #4ce67f;
+	border: 2px solid #4ce67f;
+}
+
+@media (min-width: 1300px)
+{
+	.detail-container
+	{
+
+		margin-left:25%;
+		width: 1200px;
+		display: flex;
+		padding-top: 20px;
+	}
+	
+	.current-info
+	{
+		width: 45%;
+		border-right: 2px solid #363636;
+	}
+	
+	.new-info
+	{
+		width: 45%;
+		border: 2px solid #363636;
+		padding-top: 20px;
+	}
+	
+	.new-info h3
+	{
+		left: 0;
+		right: 0;
+		margin: 0px auto;
+	}
+}
+
+
+

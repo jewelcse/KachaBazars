@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="test">
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/ecommerce?useSSL=false</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<property name="hibernate.connection.useUnicode">true</property>
+		<property name="hibernate.connection.characterEncoding">UTF-8</property>
+		
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+
+		<mapping class="model.CategoryModel" />
+		<mapping class="model.SubcategoryModel" />
+		<mapping class="model.ProductModel" />
+		<mapping class="model.CustomerModel" />
+		<mapping class="model.SellerModel" />
+		<mapping class="model.DeliveryPersonModel" />
+		<mapping class="model.OrdersModel" />
+		<mapping class="model.CartModel" />
+		<mapping class="model.CartDetailsModel" />
+		<mapping class="model.BidModel" />
+		<mapping class="model.RecommendationModel" />
+		<mapping class="model.UnitModel" />
+		<mapping class="model.DivisionModel" />
+		<mapping class="model.DistrictModel" />
+		<mapping class="model.UpazillaModel" />
+		<mapping class="model.UnionModel" />
+		<mapping class="model.SellersProduct" />
+		<mapping class="model.OrderSellerProductModel" />
+		<mapping class="model.AdminModel" />
+		
+	</session-factory>
+</hibernate-configuration>

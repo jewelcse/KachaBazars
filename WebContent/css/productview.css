@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+
+.page-info
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 300px;
+	width: 480px;
+	height: 60px;
+	text-align: center;
+	background: #fff;
+	display: block;
+	border-bottom: 2px solid #363636;
+}
+
+
+.product-container
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	margin-top: 10px;
+	width: 480px;
+}
+
+.product-table
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 90%;
+}
+
+.product-table h1
+{
+	color: #f5425d;
+}
+
+.product-image
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 340px;
+}
+
+.product-image img
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	width: 98%;
+}
+
+.input-field
+{
+	margin-top: 20px;
+	border: none;
+	width: 80%;
+	height: 30px;
+	border-bottom: 1px solid #363636;
+	letter-spacing: 2px;
+	font-size: 16px;
+	background: transparent;
+}
+
+table tr td a
+{
+	text-decoration: none;
+}
+
+.misc
+{
+	margin-top: 60px;
+}
+
+.misc a
+{
+	border: 2px solid #4aaeff;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #4aaeff;
+}
+
+.button
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+}
+
+
+.button a
+{
+	color: #fff;
+}
+
+
+.red
+{
+	background: #f5425d;
+	border: 2px solid #f5425d;
+}
+
+.red:hover
+{
+	transition: .3s all;
+	background: #4ce67f;
+	border: 2px solid #4ce67f;
+}
+
+.blue
+{
+	background: #4aaeff;
+	border: 2px solid #4aaeff;
+}
+
+.blue:hover
+{
+	transition: .3s all;
+	background: #4ce67f;
+	border: 2px solid #4ce67f;
+}
+
+
+.medium
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 160px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+@media (min-width: 1300px) 
+{
+		.page-info
+	{
+		width: 50%;
+	}
+	
+	.product-container
+	{
+		width: 1200px;
+	}
+	
+	.product-table
+	{
+		width: 90%;
+	}
+	
+	.input-field
+	{
+		text-align: center;
+	}
+	
+	.image-holder
+	{
+		width: 70%;
+	}
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+.product-container
+{
+	width: 100%;
+	height: 720px; 
+	justify-content: center;;
+	overflow: hidden;
+	position: inherit;
+}
+
+.product-container1{
+	width: 100%;
+	height: 100%; 
+	justify-content: center;
+	overflow: hidden;
+	position: inherit;
+	display: block;
+}
+
+.product-table
+{
+	border: 1px solid #1d1d1d;	
+	display: flex;
+	width: 850px;
+	border-radius: 2px;
+	transform: translate(70%,15%);	
+	padding: 30px;
+}
+.product-container table tr th
+{
+	font-size: 24px;
+	text-align: center;
+	padding: 10px 0px 40px 0px;
+}
+
+.product-image
+{
+	width: 360px;
+	overflow: hidden;
+	border-radius: 5px;
+	padding: 0px 0px 0px 50px;
+}
+
+
+.product-container table tr td
+{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	/*border: 1px solid #1d1d1d;*/
+	min-width: 200px;
+}
+
+
+
+
+.product-container .product-table .option
+{
+	width: 300px;
+	padding: 10px;
+	margin-top: 20px;
+	border: 2px solid #eb4034;
+	border-radius: 4px;
+	text-align: center;
+	color: #1d1d1d;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.product-container .product-table .option:hover
+{
+	background: rgba(76, 230, 127,.7);
+	transition: .3s;
+	border: 2px solid #4ce67f;
+	color: #fff;
+}
+
+
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+
+/*
+.rating
+{
+	margin-left: 22%;
+}
+	
+/****** Style Star Rating Widget *****/
+/*
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+/*.rating > input:checked ~ label, /* show gold star when clicked 
+.rating:not(:checked) > label:hover, /* hover current star 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list 
+
+.rating > input:checked + label:hover, /* hover current star when changing rating 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } */

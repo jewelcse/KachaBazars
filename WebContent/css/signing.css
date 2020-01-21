@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins=300,400,700,900');
+
+body
+{
+	width: 100%;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+
+
+.container
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 85px;
+	width: 420px;
+	height: auto;
+	border-radius: 55px;
+	border: 2px solid #4ce67f;
+}
+
+.box-info
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 419px;
+	height: 160px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 32px;
+	border-bottom: 2px solid #363636;
+	background: #4ce67f;
+	border-radius: 50px 50px 0px 0px;
+	color: #fff;
+}
+
+.form-table
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 420px;
+	height: auto;
+	padding-top: 40px;
+}
+
+table tr td
+{
+	padding-top: 20px;
+}
+
+.title
+{
+	margin-top: 20px;;
+}
+
+.input-field
+{
+	margin-top: 20px;
+	border: none;
+	width: 80%;
+	height: 30px;
+	border-bottom: 1px solid #363636;
+	letter-spacing: 2px;
+	font-size: 16px;
+	background: transparent;
+}
+
+.input-field:hover
+{
+	border: none;
+	border-bottom: 1px solid #f5425d;
+}
+/*
+.input-field:active
+{
+	border: none;
+	border-bottom: 1px solid #4ce67f;
+}*/
+
+.button
+{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 120px;
+	height: 40px;
+	border: 2px solid #f5425d;
+	cursor: pointer;
+	border-radius: 5px;
+	background: #f5425d;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+}
+
+.button:hover
+{
+	transition: .3s all;
+	background: #4ce67f;
+	border: 2px solid #4ce67f;
+}
+
+.misc
+{
+	margin-top: 60px;
+}
+
+.misc a
+{
+	border: 2px solid #4aaeff;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #4aaeff;
+}
+
+.add
+{
+	font-size: 12px;
+}
+
+.small
+{
+	font-size: 12px;
+}
+
+
+@media (min-width: 1000px)
+{
+	.container
+	{
+		width: 42%;
+	}	
+	
+	.box-info
+	{
+		width: 100%;
+	}
+	
+	.form-table
+	{
+		width: 90%;
+		font-size: 16px;
+	}
+}

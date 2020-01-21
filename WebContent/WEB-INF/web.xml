@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ecommerce</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>Homepage.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>controller.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/categories</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SubcategoryServlet</servlet-name>
+    <servlet-class>controller.SubcategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubcategoryServlet</servlet-name>
+    <url-pattern>/subcategories</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>controller.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/products</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>controller.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewProductServlet</servlet-name>
+    <servlet-class>controller.ViewProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewProductServlet</servlet-name>
+    <url-pattern>/viewproducts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>controller.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/customers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SellerServlet</servlet-name>
+    <servlet-class>controller.SellerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellerServlet</servlet-name>
+    <url-pattern>/sellers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeliveryPersonServlet</servlet-name>
+    <servlet-class>controller.DeliveryPersonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeliveryPersonServlet</servlet-name>
+    <url-pattern>/deliveries</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AreaServlet</servlet-name>
+    <servlet-class>controller.AreaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AreaServlet</servlet-name>
+    <url-pattern>/areas</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>controller.OrdersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/orders</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ConfirmationServlet</servlet-name>
+    <servlet-class>controller.ConfirmationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmationServlet</servlet-name>
+    <url-pattern>/confirmation</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>controller.CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/Cart</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DemandServlet</servlet-name>
+    <servlet-class>controller.DemandServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemandServlet</servlet-name>
+    <url-pattern>/demands</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>PaginationServlet</servlet-name>
+    <servlet-class>controller.PaginationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaginationServlet</servlet-name>
+    <url-pattern>/pagination</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BidsServlet</servlet-name>
+    <servlet-class>controller.BidsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BidsServlet</servlet-name>
+    <url-pattern>/bids</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BrowseServlet</servlet-name>
+    <servlet-class>controller.BrowseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BrowseServlet</servlet-name>
+    <url-pattern>/browse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SellersShopServlet</servlet-name>
+    <servlet-class>controller.SellersShopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellersShopServlet</servlet-name>
+    <url-pattern>/sellersshop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TestUiServlet</servlet-name>
+    <servlet-class>controller.TestUiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestUiServlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SellerOrderServlet</servlet-name>
+    <servlet-class>controller.SellerOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellerOrderServlet</servlet-name>
+    <url-pattern>/sellerorder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrderOperationServlet</servlet-name>
+    <servlet-class>controller.OrderOperationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderOperationServlet</servlet-name>
+    <url-pattern>/orderoperations</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>controller.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profiles</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestCustomerServlet</servlet-name>
+    <servlet-class>controller.RestCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestCustomerServlet</servlet-name>
+    <url-pattern>/rest</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>RestOrderServlet</servlet-name>
+    <servlet-class>controller.RestOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestOrderServlet</servlet-name>
+    <url-pattern>/restorder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestLocalServlet</servlet-name>
+    <servlet-class>controller.RestLocalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestLocalServlet</servlet-name>
+    <url-pattern>/restlocal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestSellerServlet</servlet-name>
+    <servlet-class>controller.RestSellerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestSellerServlet</servlet-name>
+    <url-pattern>/restseller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestSellerProductServlet</servlet-name>
+    <servlet-class>controller.RestSellerProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestSellerProductServlet</servlet-name>
+    <url-pattern>/restsellerproduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestTestServlet</servlet-name>
+    <servlet-class>controller.RestTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestTestServlet</servlet-name>
+    <url-pattern>/resttest</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RestDeliveryServlet</servlet-name>
+    <servlet-class>controller.RestDeliveryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestDeliveryServlet</servlet-name>
+    <url-pattern>/restdelivery</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ExploreServlet</servlet-name>
+    <servlet-class>controller.ExploreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExploreServlet</servlet-name>
+    <url-pattern>/explore</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>controller.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrderSuccessServlet</servlet-name>
+    <servlet-class>controller.OrderSuccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderSuccessServlet</servlet-name>
+    <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeliveryPersonOperationServlet</servlet-name>
+    <servlet-class>controller.DeliveryPersonOperationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeliveryPersonOperationServlet</servlet-name>
+    <url-pattern>/doperations</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RestCartServlet</servlet-name>
+    <servlet-class>controller.RestCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestCartServlet</servlet-name>
+    <url-pattern>/restcart</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DropDownServlet</servlet-name>
+    <servlet-class>controller.DropDownServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DropDownServlet</servlet-name>
+    <url-pattern>/dropdown</url-pattern>
+  </servlet-mapping>
+  
+  
+  <jsp-config>
+    <jsp-property-group>
+        <url-pattern>*.jsp</url-pattern>
+        <page-encoding>UTF-8</page-encoding>
+    </jsp-property-group>
+</jsp-config>
+</web-app>

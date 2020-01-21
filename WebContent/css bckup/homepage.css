@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.product-container
+{
+	margin-left: 15%;
+	margin-top: 4%;
+	width: 83%;
+	height: 780px;
+	padding: 6%;
+	padding-top: 0%;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	position: inherit;
+}
+
+.product-container h2
+{
+	margin-top: 6%;
+	margin-bottom: 3%;
+	color: #1d1d1d;
+	font-size: 30px;
+	text-align: center;
+	padding: 0;
+	text-decoration: underline;
+}
+
+.product-container ul
+{
+	display: flex;
+}
+
+.product-container ul li
+{
+	display: inline-block;
+	padding: 0px 40px;
+}
+
+
+.product-card
+{
+	cursor: pointer;
+	height: 600px;
+	width: 300px;
+	margin-left: 2%;
+	box-shadow: 0px 3px 1px #4444;
+	padding: 5%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+.image-holder
+{
+	display: flex;
+	margin-top: 1%;
+	margin-left: 0%;
+	margin-right: auto;
+	width: 100%;
+	height: 320px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.image-holder img
+{
+	width: 100%;
+	height: 320px;
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .4s ease-in-out;
+	overflow: hidden;
+}
+
+.image-holder:hover img
+{
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	transform: scale(1.2);
+}
+
+.product-details
+{
+	text-align: center;
+	padding-top: 50px;
+	overflow: hidden;
+}
+
+.product-container .image-holder .product-options
+{
+	padding: 3%;
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	background: rgba(0,0,0,.5);
+	transform: scaleY(0);
+	overflow: hidden;
+}
+
+.product-container .image-holder:hover .product-options
+{
+	transform: scaleY(1);
+	transition: transform .4s;
+}
+
+.product-container .image-holder .product-options .option
+{
+	padding: 5%;
+	margin-top: 20px;
+	border: 2px solid #4ce67f;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+}
+
+.product-container .image-holder .product-options .option:hover 
+{
+	background: rgba(0,0,0,.5);
+	transition: .3s;
+}
+
+.product-container .image-holder .product-options .option a
+{
+	color: #ffff;
+}
