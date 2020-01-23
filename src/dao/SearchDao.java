@@ -25,6 +25,7 @@ public class SearchDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 
@@ -42,6 +43,7 @@ public class SearchDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 }

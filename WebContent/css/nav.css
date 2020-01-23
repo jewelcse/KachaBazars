@@ -17,7 +17,7 @@ body
 
 .navbar
 {
-	height: 250px;
+	height: 120px;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -81,13 +81,13 @@ nav ul
 	left: 0;
 	right: 0;
 	margin: 15px auto;
+	margin-top: 160px;
 	max-width: 720px;
 	height: 35px;
 	background: #fff;
 	padding: 1.5px 0;
 	border: 2px solid #363636;
 	display: inline-block;
-	position: fixed;
 	box-sizing: border-box;
 }
 
@@ -126,7 +126,6 @@ nav ul
 .sub-navbar
 {
 	height: 30px;
-	margin-top: 60px;
 	box-shadow: 0px 3px 1px #4444;
 }
 
@@ -184,7 +183,8 @@ nav ul
 	
 	.search
 	{
-		margin-top: 20px;
+		width: 720px;
+		margin-top: 160px;
 	}
 	
 	
@@ -201,10 +201,8 @@ nav ul
 	.sub-navbar
 	{
 		width: 100%;
-		margin-top: 79px;
 		background: #fff;
 		height: 60px;
-		position: fixed;
 	}
 	
 	.sub-navbar ul li a

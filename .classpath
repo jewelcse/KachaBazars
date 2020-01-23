@@ -59,7 +59,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/infinispan-commons-6.0.0.Final.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/infinispan-core-6.0.0.Final.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/jandex-1.1.0.Final.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/jboss-logging-3.1.3.GA.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/jboss-marshalling-1.3.18.GA.jar"/>
@@ -73,7 +72,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/org.osgi.core-4.3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/proxool-0.8.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/rhq-pluginAnnotations-3.0.4.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/HP/git/test/ecommerce/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/gson"/>
 	<classpathentry kind="lib" path="D:/jars/org.json.jar"/>
 	<classpathentry kind="lib" path="D:/java/mysql-connector-java-8.0.17/mysql-connector-java-8.0.17/mysql-connector-java-8.0.17.jar"/>
@@ -92,5 +90,24 @@
 	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/jackson-databind-2.6.3.jar"/>
 	<classpathentry kind="lib" path="D:/jars/commons-codec-1.11.jar"/>
 	<classpathentry kind="lib" path="D:/jars/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/aspectjweaver-1.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/c3p0-0.9.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/mchange-commons-java-0.2.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/async-http-client-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-buffer-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-codec-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-codec-dns-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-codec-http-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-common-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-handler-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-reactive-streams-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-resolver-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-resolver-dns-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-transport-4.0.37.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/netty-transport-native-epoll-4.0.37.Final-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/reactive-streams-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/Backups/7_10/ecommerce/WebContent/WEB-INF/lib/slf4j-api-1.7.21.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

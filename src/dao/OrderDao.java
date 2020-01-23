@@ -48,7 +48,7 @@ public class OrderDao {
 
 			session.flush();
 			session.close();
-
+			con.closeSessionFactory();
 			return (ArrayList<OrdersModel>) ordersModels2;
 		//	return cartDetailsModels;
 		}
@@ -71,6 +71,7 @@ public class OrderDao {
 		System.out.println(deliveryPersonModel);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return deliveryPersonModel;
 	}
 
@@ -86,7 +87,7 @@ public class OrderDao {
 		
 		session.flush();
 		session.close();
-		
+		con.closeSessionFactory();
 		return ordersModels;
 	}
 
@@ -102,7 +103,7 @@ public class OrderDao {
 		
 		session.flush();
 		session.close();
-		
+		con.closeSessionFactory();
 		return ordersModels;
 	}
 
@@ -118,7 +119,7 @@ public class OrderDao {
 		
 		session.flush();
 		session.close();
-		
+		con.closeSessionFactory();
 		return ordersModels;
 	}
 		

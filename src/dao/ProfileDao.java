@@ -46,7 +46,7 @@ public class ProfileDao {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return ordersModels2;
 	}
 
@@ -79,7 +79,7 @@ public class ProfileDao {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return orderSellerProductModels2;
 	}		
 }

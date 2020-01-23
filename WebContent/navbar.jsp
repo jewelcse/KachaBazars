@@ -118,6 +118,7 @@
 				</ul>
 			</nav>
 		</div>
+		</div>
 
 		<div class="search">
 
@@ -139,16 +140,10 @@
 			<ul>
 				<li class="menu-name-2"><b><a href="./test?action=all">Buy
 							From Farmers</a></b></li>
-
-
-
-
-
 				<li class="menu-name-2"><b><a
 						href="./browse?action=ourshop">Explore Kachabazar Inventory</a></b></li>
 			</ul>
 		</nav>
-	</div>
 
 </body>
 </html>

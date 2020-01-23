@@ -32,6 +32,7 @@ public class DropDownDAO {
 		
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return divisionsModel;
 		
 	}
@@ -50,7 +51,7 @@ public class DropDownDAO {
 		
 		session.flush();
 		session.close();
-		
+		con.closeSessionFactory();
 		return districtsModels;
 		
 	}
@@ -68,7 +69,7 @@ public class DropDownDAO {
 		
 		session.flush();
 		session.close();
-		
+		con.closeSessionFactory();
 		return upazillasModels;
 	}
 
@@ -97,7 +98,7 @@ public class DropDownDAO {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return options;
 	}
 
@@ -126,7 +127,7 @@ public class DropDownDAO {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return options;
 	}
 
@@ -156,7 +157,7 @@ public class DropDownDAO {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return options;
 	}
 
@@ -187,7 +188,7 @@ public class DropDownDAO {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return options;
 	}
 

@@ -32,6 +32,7 @@ public class DeliveryDao {
 		System.out.println(deliveryPersonModel);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return deliveryPersonModel;
 	}
 	
@@ -70,6 +71,7 @@ public class DeliveryDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 
 		return (ArrayList<OrdersModel>) ordersModels2;
 	//	return cartDetailsModels;
@@ -109,7 +111,7 @@ public class DeliveryDao {
 		session.flush();
 		session.close();
 
-
+		con.closeSessionFactory();
 		
 		return (ArrayList<OrderSellerProductModel>) orderSellerProductModels2;
 	//	return cartDetailsModels;

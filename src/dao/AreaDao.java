@@ -63,7 +63,7 @@ public class AreaDao {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return districtModels2;
 	//	return cartDetailsModels;
 	}
@@ -97,7 +97,7 @@ public class AreaDao {
 
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return upazillaModels2;
 	//	return cartDetailsModels;
 	}
@@ -133,6 +133,7 @@ public class AreaDao {
 		session.flush();
 		session.close();
 		System.out.println(unionModels2);
+		con.closeSessionFactory();
 		return unionModels2;
 	//	return cartDetailsModels;
 	}
@@ -145,7 +146,7 @@ public class AreaDao {
 
 		Query queryExecuteable = session.createQuery(query);
 		DivisionModel divisionModel = (DivisionModel) queryExecuteable.list().get(0);
-
+		con.closeSessionFactory();
 		return divisionModel;
 	}
 	
@@ -159,6 +160,8 @@ public class AreaDao {
 		districtModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 		return districtModels;
 	}
 	
@@ -172,6 +175,7 @@ public class AreaDao {
 		upazillaModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return upazillaModels;
 	}
 	
@@ -185,6 +189,7 @@ public class AreaDao {
 		unionModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return unionModels;
 	}
 
@@ -199,6 +204,7 @@ public class AreaDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return districtModel;
 	}
 
@@ -213,6 +219,7 @@ public class AreaDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return upazillaModel;
 	}
 
@@ -227,6 +234,7 @@ public class AreaDao {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return unionModel;
 	}
 }

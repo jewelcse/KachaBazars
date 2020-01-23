@@ -47,8 +47,11 @@ public class DBData {
 		Transaction transaction = session.beginTransaction();
 		session.save(category);
 		transaction.commit();
+		
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -59,9 +62,11 @@ public class DBData {
 
 		Query queryExecuteable = session.createQuery(query);
 		CategoryModel categoryModel = (CategoryModel) queryExecuteable.list().get(0);
-
+		
+		con.closeSessionFactory();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return categoryModel;
 	}
 
@@ -75,6 +80,7 @@ public class DBData {
 		categoryModel = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return categoryModel;
 	}
 
@@ -89,6 +95,7 @@ public class DBData {
 		categoryModel = query.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return categoryModel;
 	}
 
@@ -102,6 +109,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Updated...");
 	}
 
@@ -116,6 +124,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Deleted...");
 	}
 
@@ -130,6 +139,7 @@ public class DBData {
 		session.flush();
 		session.close();
 		System.out.println("Inserted...");
+		con.closeSessionFactory();
 	}
 
 	public List<SubcategoryModel> getAllSubcategories() {
@@ -142,6 +152,7 @@ public class DBData {
 		subcategoryModel = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return subcategoryModel;
 	}
 
@@ -154,6 +165,7 @@ public class DBData {
 		SubcategoryModel subcategoryModel = (SubcategoryModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return subcategoryModel;
 	}
 
@@ -169,6 +181,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -182,6 +195,7 @@ public class DBData {
 		productModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 
@@ -194,6 +208,7 @@ public class DBData {
 		ProductModel productModel = (ProductModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModel;
 	}
 
@@ -208,6 +223,7 @@ public class DBData {
 		customerModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return customerModels;
 	}
 
@@ -222,6 +238,7 @@ public class DBData {
 		sellerModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return sellerModels;
 	}
 
@@ -236,6 +253,7 @@ public class DBData {
 		deliveryPersonModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return deliveryPersonModels;
 	}
 
@@ -250,6 +268,7 @@ public class DBData {
 		areaModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return areaModels;
 	}
 	
@@ -265,6 +284,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -279,6 +299,7 @@ public class DBData {
 		ordersModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return ordersModels;
 	}
 
@@ -311,6 +332,7 @@ public class DBData {
 		CustomerModel customer = (CustomerModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return customer;
 		
 		
@@ -327,6 +349,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -343,6 +366,7 @@ public class DBData {
 		session.flush();
 		session.close();
 		System.out.println("Inserted...");
+		con.closeSessionFactory();
 	}
 
 	public SellerModel getPasswordByPhone(String phone) {
@@ -362,6 +386,7 @@ public class DBData {
 		System.out.println(sellerModel);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return sellerModel;
 	}
 
@@ -377,6 +402,7 @@ public class DBData {
 		CartModel cart = (CartModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return cart;
 	}
 
@@ -391,6 +417,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -423,6 +450,7 @@ public class DBData {
 
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 
 		return cartDetailsModels2;
 	//	return cartDetailsModels;
@@ -440,6 +468,7 @@ public class DBData {
 		System.out.println("Inserted...");
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 	}
 
 	public CustomerModel getCustomerPasswordByPhone(String customerPhone) {
@@ -460,6 +489,7 @@ public class DBData {
 		System.out.println(customerModel);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return customerModel;
 	}
 
@@ -475,6 +505,7 @@ public class DBData {
 		System.out.println("Inserted...");
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 	}
 
 	public List<OrdersModel> getDemandsByDate(String date) {
@@ -501,6 +532,7 @@ public class DBData {
 		session.flush();
 		session.close();
 
+		con.closeSessionFactory();
 		return ordersModels2;
 	}
 
@@ -516,6 +548,7 @@ public class DBData {
 		OrdersModel ordersModel = (OrdersModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return ordersModel;
 	}
 
@@ -529,6 +562,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Updated...");
 	}
 
@@ -542,6 +576,7 @@ public class DBData {
 		DeliveryPersonModel deliveryPerson = (DeliveryPersonModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return deliveryPerson;
 	}
 
@@ -555,6 +590,7 @@ public class DBData {
 		SellerModel seller = (SellerModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return seller;
 	}
 
@@ -568,6 +604,7 @@ public class DBData {
 		AreaModel area = (AreaModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return area;
 	}
 
@@ -582,6 +619,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -595,6 +633,7 @@ public class DBData {
 		System.out.println("Updated...");
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 	}
 
 	public List<ProductModel> getAllProductLimitedTo(int offSet, int recordPerPage) {
@@ -610,6 +649,7 @@ public class DBData {
 		productModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 
@@ -630,6 +670,7 @@ public class DBData {
 		}
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return counter;
 	}
 
@@ -645,6 +686,7 @@ public class DBData {
 		System.out.println("Deleted...");
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 
 	}
 
@@ -660,6 +702,7 @@ public class DBData {
 		System.out.println("Inserted...");
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 	}
 
 	public List<BidModel> getAllBids() {
@@ -673,6 +716,7 @@ public class DBData {
 		bidModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return bidModels;
 	}
 
@@ -687,6 +731,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -702,6 +747,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Deleted...");
 	}
 	
@@ -716,6 +762,7 @@ public class DBData {
 		unitModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return unitModels;
 	}
 
@@ -729,6 +776,7 @@ public class DBData {
 		UnitModel unit = (UnitModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return unit;
 	}
 	
@@ -743,6 +791,7 @@ public class DBData {
 		divisionModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return divisionModels;
 	}
 
@@ -757,6 +806,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 
@@ -789,6 +839,8 @@ public class DBData {
 
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 
 		return sellersProducts2;
 	//	return cartDetailsModels;
@@ -820,6 +872,8 @@ public class DBData {
 		session.flush();
 		session.close();
 		
+		con.closeSessionFactory();
+		
 		return sellersProducts2;
 	}
 
@@ -848,6 +902,8 @@ public class DBData {
 		
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 
 		return sellersProducts2;
 	}
@@ -877,6 +933,8 @@ public class DBData {
 		
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 
 		return sellersProducts2;
 	}
@@ -891,6 +949,9 @@ public class DBData {
 		SellersProduct sellersProduct = (SellersProduct) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
+		
 		return sellersProduct;
 	}
 
@@ -905,6 +966,8 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 		System.out.println("Inserted...");
 	}
 	
@@ -918,6 +981,7 @@ public class DBData {
 		orderSellerProductModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return orderSellerProductModels;
 	}
 
@@ -931,6 +995,8 @@ public class DBData {
 		OrderSellerProductModel orderSellerProductModel = (OrderSellerProductModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		
+		con.closeSessionFactory();
 		return orderSellerProductModel;
 	}
 
@@ -945,6 +1011,7 @@ public class DBData {
 		transaction.commit();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		System.out.println("Updated...");
 	}
 
@@ -959,6 +1026,7 @@ public class DBData {
 		sellersProducts = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return sellersProducts;
 	}
 	
@@ -973,6 +1041,7 @@ public class DBData {
 		sellersProducts = (ArrayList<SellersProduct>) queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return sellersProducts;
 	}
 
@@ -1004,6 +1073,7 @@ public class DBData {
 		session.flush();
 		session.close();
 
+		con.closeSessionFactory();
 		return customerModels2;
 		
 	}
@@ -1019,6 +1089,7 @@ public class DBData {
 		productModels = (ArrayList<ProductModel>) queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 
@@ -1051,6 +1122,7 @@ public class DBData {
 		session.flush();
 		session.close();
 
+		con.closeSessionFactory();
 		return sellersProducts2;
 	}
 
@@ -1082,7 +1154,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return districtModels2;
 	}
 
@@ -1114,7 +1186,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return upazillaModels2;
 	}
 
@@ -1146,7 +1218,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return sellersProducts2;
 	} 
 
@@ -1178,7 +1250,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return sellersProducts2;
 	}
 
@@ -1210,7 +1282,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return productModels2;
 	}
 
@@ -1242,7 +1314,7 @@ public class DBData {
 		
 		session.flush();
 		session.close();
-
+		con.closeSessionFactory();
 		return sellersProducts2;
 	}
 
@@ -1264,6 +1336,7 @@ public class DBData {
 		System.out.println(adminModel);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return adminModel;
 	}
 	
@@ -1280,6 +1353,7 @@ public class DBData {
 		productModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return productModels;
 	}
 
@@ -1293,6 +1367,7 @@ public class DBData {
 		OrdersModel ordersModel = (OrdersModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return ordersModel;
 	}
 	
@@ -1308,6 +1383,7 @@ public class DBData {
 		CustomerModel customerModel = (CustomerModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return customerModel;
 	}
 
@@ -1323,6 +1399,7 @@ public class DBData {
 		ordersModels = queryExecuteable.list();
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return ordersModels;
 	}
 
@@ -1336,6 +1413,7 @@ public class DBData {
 		OrderSellerProductModel ordersModel = (OrderSellerProductModel) queryExecuteable.list().get(0);
 		session.flush();
 		session.close();
+		con.closeSessionFactory();
 		return ordersModel;
 	}
 }
